@@ -28,3 +28,7 @@ io.on('connection', function(socket) {
 
 - `socket.io:connection:start` socket connected
 - `socket.io:connection:end` socket disconnected
+
+## License
+
+MIT
