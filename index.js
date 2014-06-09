@@ -1,8 +1,9 @@
 var assert = require('assert')
 
 module.exports = function(opts) {
-  assert(opts, 'settings required')
-  assert(opts.trace, '.trace function required')
+  assert(opts, 'opts required')
+  assert(opts.trace,
+    'opts.trace is required and should be an instance of jstrace')
   var trace = opts.trace
 
   return function(socket, next) {
