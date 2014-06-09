@@ -1,6 +1,6 @@
 {
   "name": "socket.io-jstrace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "jstrace middleware for socket.io",
   "main": "index.js",
   "dependencies": {},
