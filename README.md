@@ -2,6 +2,8 @@
 
 jstrace middleware for socket.io
 
+[![build status](https://circleci.com/gh/evanlucas/socket.io-jstrace.png?circle-token=bde54886a8d80959ef6394d3caa14bcf66e4f124)](https://circleci.com/gh/evanlucas/socket.io-jstrace)
+
 ## Install
 
 ```bash
