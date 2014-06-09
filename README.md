@@ -31,6 +31,18 @@ io.on('connection', function(socket) {
 - `socket.io:connection:start` socket connected
 - `socket.io:connection:end` socket disconnected
 
+## Tests
+
+```bash
+$ npm test
+```
+
+## Coverage
+
+```bash
+$ npm run cover
+```
+
 ## License
 
 MIT

@@ -5,6 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "license": "MIT",
+  "scripts": {
+    "test": "mocha -R list",
+    "cover": "mocha -R json-cov -r blanket | jostle"
+  },
   "keywords": [
     "socket.io",
     "middleware",
@@ -19,5 +23,18 @@
   "homepage": "https://github.com/evanlucas/socket.io-jstrace",
   "bugs": {
     "url": "https://github.com/evanlucas/socket.io-jstrace/issues"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "index.js",
+      "data-cover-never": "node_modules"
+    }
+  },
+  "devDependencies": {
+    "blanket": "~1.1.6",
+    "jostle": "~0.1.1",
+    "mocha": "~1.20.1",
+    "should": "~4.0.1",
+    "socket.io": "~1.0.4"
   }
 }
