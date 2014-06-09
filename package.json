@@ -1,0 +1,23 @@
+{
+  "name": "socket.io-jstrace",
+  "version": "0.0.0",
+  "description": "jstrace middleware for socket.io",
+  "main": "index.js",
+  "dependencies": {},
+  "license": "MIT",
+  "keywords": [
+    "socket.io",
+    "middleware",
+    "jstrace",
+    "trace"
+  ],
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/socket.io-jstrace"
+  },
+  "homepage": "https://github.com/evanlucas/socket.io-jstrace",
+  "bugs": {
+    "url": "https://github.com/evanlucas/socket.io-jstrace/issues"
+  }
+}
