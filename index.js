@@ -6,7 +6,9 @@ module.exports = function(opts) {
   var trace = opts.trace
 
   return function(socket, next) {
-    var nsp = socket.nsp || '/'
+    var nsp = socket.nsp
+      ? socket.nsp.name || '/'
+      : '/'
       , id = socket.id
     trace('socket.io:connection:start', {
       id: id
