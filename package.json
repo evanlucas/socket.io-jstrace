@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha -R list",
-    "cover": "mocha -R json-cov -r blanket | jostle"
+    "cover": "mocha -R json-cov -r blanket | jostle",
+    "circle": "mkdir -p $CIRCLE_ARTIFACTS && mocha -R html-cov -r blanket > $CIRCLE_ARTIFACTS/coverage.html"
   },
   "keywords": [
     "socket.io",
