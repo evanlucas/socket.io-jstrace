@@ -104,4 +104,18 @@ describe('socket.io-jstrace', function() {
       }, 300)
     })
   })
+
+  it('should throw error if no opts are passed', function() {
+    (function() {
+      siotrace()
+    }).should.throw('opts required')
+  })
+
+  it('should throw error if opts.trace is not passed', function() {
+    (function() {
+      siotrace({})
+    }).should.throw(
+      'opts.trace is required and should be an instance of jstrace'
+    )
+  })
 })
