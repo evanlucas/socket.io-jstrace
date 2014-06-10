@@ -22,14 +22,18 @@ io.use(siotrace({
 }))
 
 io.on('connection', function(socket) {
-  
+    
 })
 ```
 
 ## Probes
 
 - `socket.io:connection:start` socket connected
+  - `nsp` the namespace
+  - `id` the socket id
 - `socket.io:connection:end` socket disconnected
+  - `nsp` the namespace
+  - `id` the socket id
 
 ## Tests
 
